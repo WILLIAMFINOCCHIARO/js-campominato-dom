@@ -1,0 +1,102 @@
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+
+header {
+  background-color: blue;
+  height: 150px;
+  color: white;
+}
+
+header::after{
+  content:"";
+  display: table;
+  clear:both;
+}
+
+header .title {
+  text-align: center;
+}
+
+header .logo {
+  float: left;
+}
+
+header .writes {
+  float: right;
+  padding-right: 60px;
+}
+
+header .logo img {
+  height: 100px;
+  padding-left:50px;
+}
+
+header .input {
+  text-align: center;
+  margin-top: 30px;
+
+}
+.font {
+font-size: 30px;
+}
+
+main {
+  display: flex;
+  align-items: center;
+}
+
+
+main .container {
+  height: 500px;
+  width: 500px;
+  margin:20px auto ;
+  background-color:blue;
+  border: 5px solid red;
+}
+
+main .container .square {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  border: 2px solid orange;
+  float: left;
+  display: none;
+}
+
+ .scritta {
+  margin-top:30px;
+  border:2px solid red;
+  padding:10px;
+  margin-left: 40px;
+}
+
+.quaranta {
+  width: calc(100% / 8);
+  height: calc(100% / 8);
+
+}
+
+.ottanta {
+  width: calc(100% / 8);
+  height: calc(100% / 8);
+
+}
+
+
+.quaranta {
+  width: calc(100% / 4);
+  height: calc(100% / 4);
+
+}
+
+.active {
+  background-color: red;
+  display: inline-block;
+}
